@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mehak.dietplanner.HomeScreenController">
+   <children>
+      <Label fx:id="userLabel" layoutX="38.0" layoutY="21.0" text="Welcome User">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button layoutX="38.0" layoutY="62.0" mnemonicParsing="false" onAction="#Signout" text="Sign Out" />
+      <Button layoutX="37.0" layoutY="143.0" mnemonicParsing="false" onAction="#showRecipes" text="Manage Recipes" />
+      <Label layoutX="178.0" layoutY="27.0" text="Vegetarian Balanced Diet Planner">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Button layoutX="39.0" layoutY="188.0" mnemonicParsing="false" onAction="#viewMealPlan" text="Meal Viewer" />
+      <ListView fx:id="mealsListView" layoutX="199.0" layoutY="199.0" prefHeight="179.0" prefWidth="354.0" />
+      <Button layoutX="462.0" layoutY="169.0" mnemonicParsing="false" onAction="#generateMealPlan" text="Generate Plan" />
+      <DatePicker fx:id="endDate" layoutX="378.0" layoutY="88.0" promptText="Select Date" />
+      <Label layoutX="199.0" layoutY="171.0" text="Current Diet Plan:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboDietPref" layoutX="378.0" layoutY="130.0" prefHeight="26.0" prefWidth="175.0" promptText="Select Dietary Preference" />
+      <Button layoutX="37.0" layoutY="101.0" mnemonicParsing="false" onAction="#changeDetails" text="Update Details" />
+      <TextField fx:id="textMealID" layoutX="189.0" layoutY="131.0" prefHeight="26.0" prefWidth="175.0" promptText="Enter Meal ID" />
+      <TextField fx:id="noMeals" layoutX="189.0" layoutY="88.0" prefHeight="26.0" prefWidth="175.0" promptText="No of Meals." />
+      <Label fx:id="stat" layoutX="86.0" layoutY="361.0" text="Label" />
+   </children>
+</AnchorPane>

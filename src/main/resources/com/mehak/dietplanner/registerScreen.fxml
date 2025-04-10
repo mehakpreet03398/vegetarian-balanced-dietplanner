@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mehak.dietplanner.RegisterScreenController">
+   <children>
+      <TextField fx:id="textUserID" layoutX="91.0" layoutY="65.0" promptText="User ID" />
+      <TextField fx:id="textPassword" layoutX="368.0" layoutY="65.0" promptText="Password" />
+      <TextField fx:id="textEmail" layoutX="91.0" layoutY="123.0" promptText="Email" />
+      <TextField fx:id="textAge" layoutX="368.0" layoutY="123.0" promptText="Age" />
+      <TextField fx:id="textWeight" layoutX="91.0" layoutY="185.0" promptText="Weight (kg)" />
+      <TextField fx:id="textHeight" layoutX="368.0" layoutY="185.0" promptText="Height (cm)" />
+      <Label layoutX="251.0" layoutY="25.0" text="Create New User" />
+      <Button layoutX="269.0" layoutY="327.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <ComboBox fx:id="comboDietaryPreferences" layoutX="92.0" layoutY="244.0" prefHeight="27.0" prefWidth="174.0" promptText="Dietary Preferences" />
+      <ComboBox fx:id="comboActivityLevel" layoutX="368.0" layoutY="245.0" prefWidth="150.0" promptText="Activity Level" />
+      <Label fx:id="status" layoutX="368.0" layoutY="333.0" text="Status" />
+      <Button layoutX="92.0" layoutY="327.0" mnemonicParsing="false" onAction="#login" text="Back to Login" />
+   </children>
+</AnchorPane>
